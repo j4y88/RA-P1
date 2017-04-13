@@ -1,0 +1,18 @@
+*{box-sizing: border-box; margin:-1px; border: 0.1px solid;*/}
+
+.flex {
+	display: flex;
+}
+.flex-sm-col {
+	flex-flow:column wrap;
+}
+.flex-sm-row{
+	flex-flow:row wrap;
+}
+@media (min-width: 600px) {
+
+}
+
+
+
+
