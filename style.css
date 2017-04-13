@@ -1,4 +1,4 @@
-*{box-sizing: border-box; margin:-1px; border: 0.1px solid;*/}
+*{box-sizing: border-box; border: 0.1px solid;*/}
 
 .flex {
 	display: flex;
@@ -6,12 +6,45 @@
 .flex-sm-col {
 	flex-flow:column wrap;
 }
-.flex-sm-row{
+.flex-sm-row {
 	flex-flow:row wrap;
 }
-@media (min-width: 600px) {
-
+.align-between-elements {
+	justify-content: space-between;
 }
+.align-around-elements {
+	justify-content: space-around;
+}
+.align-center-elements {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.font-align-center {
+	text-align: center;
+}
+.logo-reduce-size {
+	height: 50px;
+}
+.banner-height {
+	height:300px;
+}
+.font-color-white {
+	color: white;
+}
+.banner-image-top {
+	background: url('assets/images/banner-girl.png') center no-repeat;
+	background-size: 22%
+}
+.banner-image-bottom {
+	background: url('assets/images/flower-bkgd.jpg') center no-repeat;
+	background-size: 100%
+}
+.banner-signup-image {
+	background: url('assets/images/wave-bkgd.jpg') bottom no-repeat;
+	background-size: 200%
+}
+/*@media (min-width: 600px) {}
 
 
 
