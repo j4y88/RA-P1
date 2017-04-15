@@ -1,5 +1,108 @@
-*{box-sizing: border-box; border: 0.1px solid;*/}
 
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('assets/fonts/PlayfairDisplay-Regular.otf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('assets/fonts/PlayfairDisplay-Italic.otf'); 
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('assets/fonts/PlayfairDisplay-Bold.otf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('assets/fonts/PlayfairDisplay-BoldItalic.otf'); 
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('assets/fonts/Raleway-Light.ttf'); 
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('assets/fonts/Raleway-LightItalic.ttf'); 
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('assets/fonts/Raleway-Medium.ttf'); 
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('assets/fonts/Raleway-MediumItalic.ttf'); 
+	font-weight: 600;
+}
+p {
+	font-family: raleway;
+	font-size: 14px;
+	color: #2d2d2d;
+	margin: 8px 0px;
+	line-height: 30px;
+	text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: playfairdisplay;
+	margin: 8px 0px;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 20px;
+}
+h5 {
+	letter-spacing: 1px;
+}
+#subscribe-box {
+	background-color: white;
+    border-radius: 50px;
+    padding: 0px 6px; 
+    width: 80%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 50px; 
+}
+#subscribe-email-input {
+	background-color: #white;
+    border-radius: 20px;
+    width: 150px;
+    height: 20px; 
+}
+#subscribe-button {
+	background-color: #e2574c;
+    border-radius: 40px;
+    width: 110px;
+    height: 40px; 
+}
+.font-light {
+	font-weight: 100;
+}
+.font-lightitalic {
+	font-weight: 200;
+}
+.font-regular {
+	font-weight: 500;
+}
+.font-italic {
+	font-weight: 600;
+}
+.font-bold {
+	font-weight: 700;
+}
+.font-bolditalic {
+	font-weight: 800;
+}
 .flex {
 	display: flex;
 }
@@ -16,36 +119,166 @@
 	justify-content: space-around;
 }
 .align-center-elements {
+	justify-content: center;
+	align-items: center;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 }
+.flex-align-center {
+	justify-content: center;
+	align-items: center;
+}
+.flex-align-items {
+	align-items: center;
+}
 .font-align-center {
 	text-align: center;
 }
-.logo-reduce-size {
+.logo-size {
 	height: 50px;
 }
-.banner-height {
-	height:300px;
+.footer-head-spacer {
+	height: 8px;
+}
+.text-box-width-max530 {
+	width: 100%;
+	max-width: 530px;
+}
+.banner-height250 {
+	height: 250px;
+}
+.banner-height300 {
+	height: 300px;
+}
+.banner-height400 {
+	height: 400px;
+}
+.banner-height500 {
+	height: 500px;
 }
 .font-color-white {
 	color: white;
 }
-.banner-image-top {
-	background: url('assets/images/banner-girl.png') center no-repeat;
-	background-size: 22%
+.font-color-light-grey {
+	color: #969696;
 }
-.banner-image-bottom {
-	background: url('assets/images/flower-bkgd.jpg') center no-repeat;
-	background-size: 100%
+.font-color-brand-orange {
+	color: #e2574c;
 }
-.banner-signup-image {
-	background: url('assets/images/wave-bkgd.jpg') bottom no-repeat;
-	background-size: 200%
+.footer-dark-grey-bg {
+	background-color: #242424;
+}
+.font-add-shadow {
+    text-shadow: 1px 2px rgba(0,0,0,0.2);
+}
+.banner-image{
+	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
+				url('assets/images/banner-girl.png') center bottom no-repeat, 
+				url('assets/images/flower-bkgd.jpg') center bottom;
+	background-size: cover, auto 90%, auto 100%;
+}
+.banner-signup-image { 
+	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),
+				url('assets/images/wave-bkgd.jpg') bottom no-repeat;
+	background-size: auto 300%;
+}
+.hide-sm {
+	display: none;
+}
+.margin-hor5 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.margin-hor10 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.margin-ver5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.margin-ver15 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.margin-ver25 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.margin-2 {
+	margin: 2px;
+}
+.margin-top50 {
+	margin-top: 50px;
+}
+.margin-bottom50 {
+	margin-bottom: 50px;
+}
+.line-height20 {
+	line-height: 20px;
 }
 /*@media (min-width: 600px) {}
 
 
+/*For the Project 1, you will first create a homepage for your client "The Aloha Apparel Co.". The first part of this project will focus on building out the HTML and CSS components of this responsive website.
+You can download the files at http://bit.ly/ra-project01a Design Specifications
 
+Typography:
+The base font size is 16px for all screen width 600px and up (the mobile base font size is 14px )
+The body font family is Raleway Light
+The headings font family is Playfair Display
+
+Colours:
+The HEX code for the body font colour is #2d2d2d
+The HEX code for the light grey text colour is #969696 
+The HEX code for orange brand colour is #e2574c (used for links, some headings, and buttons)
+The HEX code for the link hover state colour is #b64036 
+The HEX code for the light grey border colour is #d7d7d7
+         
+Web Developer
+Learning Materials
+ Project 1 / Part 1 - Aloha Homepage
+Next week, we’ll work on adding interactivity to the site with JS :)
+        
+ The HEX code for the dark grey background colour is the footer is #242424
+Screen Sizes:
+The width of the desktop-friendly content area is 1240px If undertaking the responsive stretch goal, the width of the tablet-friendly content area is 600px
+Requirements
+To receive a “Pass” grade for this project, your submission will need to satisfy the following criteria:
+General requirements:
+Your project must:
+Contain a single .html file and an external .css file (a CSS reset may be included separately)
+Adequately reflect the designer’s vision for the website Demonstrate effective organization of the project’s root directory
+Have a Git repository initialized in its root directory
+with an appropriately customized .gitignore file
+Be pushed to GitHub (with all of your commits synced to it)
+Contain a README.md file describing the project (e.g. technologies used, personal learnings, etc.)
+HTML requirements:
+Your project must:
+Use the HTML5 doctype and semantic HTML5 mark-up Include all essential elements covered in class (e.g.
+<meta charset="utf-8"> )
+Make appropriate use of paragraph, heading, and list elements
+CSS requirements:
+Your project must:
+                   
+ Make appropriate use of classes and IDs as selectors Use a CSS reset
+Use the background property where appropriate Use the float property effectively
+Demonstrate effective use of box model properties Demonstrate effective use of CSS properties for altering the visual display of text (e.g. font-family , font- style , text-transform , etc.)
+Incorporate custom fonts using @font-face
+Use an icon font
+Use CSS3 properties where appropriate (e.g. box- shadow or border-radius )
+Stretch goals:
+Want to challenge yourself? Your project could also:
+Be responsively designed using a mobile-first approach Be optimized for 3 screen sizes: mobile and min-width: 600px and min-width: 1240px
+Submission Instructions
+When you’re ready to submit your project, please email a link to your GitHub repository containing your project to cody.collicott@redacademy.com and cc: edward.apostol @redacademy.com.
+
+
+       <h1 class="font-playfair-italic">Spring Summer 2016</h1>
+        <h1 class="font-playfair-bolditalic">Spring Summer 2016</h1>
+        <h1 class="font-raleway-light">Spring Summer 2016</h1>
+        <h1 class="font-raleway-lightitalic">Spring Summer 2016</h1>
+        <h1 class="font-raleway-medium">Spring Summer 2016</h1>
+        <h1 class="font-raleway-mediumitalic">Spring Summer 2016</h1>
 
