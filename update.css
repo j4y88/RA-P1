@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('assets/fonts/PlayfairDisplay-Regular.otf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('assets/fonts/PlayfairDisplay-Italic.otf'); 
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('assets/fonts/PlayfairDisplay-Bold.otf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: url('assets/fonts/PlayfairDisplay-BoldItalic.otf'); 
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('assets/fonts/Raleway-Light.ttf'); 
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('assets/fonts/Raleway-LightItalic.ttf'); 
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('assets/fonts/Raleway-Medium.ttf'); 
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('assets/fonts/Raleway-MediumItalic.ttf'); 
+	font-weight: 600;
+}
