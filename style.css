@@ -1,5 +1,3 @@
-*{box-sizing: border-box;/*border: 0.1px solid;*/}
-
 @font-face {
 	font-family: 'PlayfairDisplay';
 	src: url('assets/fonts/PlayfairDisplay-Regular.otf');
@@ -44,46 +42,33 @@ p {
 	font-family: raleway;
 	font-size: 14px;
 	color: #2d2d2d;
-	margin: 6 px 0px;
-	line-height: 27px;
-	text-align: center;
+	line-height: 28px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: playfairdisplay;
-	margin: 8px 0px;
+	color: #2d2d2d;
 }
 h1 {
 	font-size: 30px;
+	margin: 10px;
 }
 h2 {
 	font-size: 28px;
+	margin: 8px;
 }
 h3 {
 	font-size: 20px;
 }
 h5 {
 	letter-spacing: 1px;
+	margin: 5px;
 }
-#subscribe-box {
-	background-color: white;
-    border-radius: 50px;
-    padding: 0px 6px; 
-    width: 80%;
-    min-width: 300px;
-    max-width: 400px;
-    height: 40px; 
+a:hover, h3:hover, i:hover{
+	text-decoration: none;
+	color: #b64036;
 }
-#subscribe-email-input {
-	background-color: #white;
-    border-radius: 20px;
-    width: 150px;
-    height: 20px; 
-}
-#subscribe-button {
-	background-color: #e2574c;
-    border-radius: 40px;
-    width: 110px;
-    height: 35px; 
+a:link, h3:link, i:link{
+	text-decoration: none;
 }
 .font-light {
 	font-weight: 100;
@@ -103,44 +88,35 @@ h5 {
 .font-bolditalic {
 	font-weight: 800;
 }
-.flex {
-	display: flex;
+.font-line-10 {
+	line-height: 5px;
 }
-.flex-sm-col {
-	flex-flow:column wrap;
-}
-.flex-sm-row {
-	flex-flow:row wrap;
-}
-.flex-align-space-between {
-	justify-content: space-between;
-}
-.flex-align-space-around {
-	justify-content: space-around;
-}
-.align-center-elements {
-	justify-content: center;
-	align-items: center;
-	position: relative;
-}
-.flex-align-center {
-	justify-content: center;
-	align-items: center;
-}
-.flex-align-items-center {
-	align-items: center;
-}
-.font-align-center {
+.font-text-center {
 	text-align: center;
 }
-.logo-size {
-	height: 40px;
+.font-color-white {
+	color: white;
 }
-.footer-head-spacer {
-	height: 8px;
+.font-color-brand-orange {
+	color: #e2574c;
 }
-.height225 {
-	height: 225px;
+.font-color-light-grey {
+	color: #969696;
+}
+.font-shadow {
+    text-shadow: 2px 3px rgba(0,0,0,0.1);
+}
+.bg-dark-grey {
+	background-color: #242424;
+}
+.bg-light-grey {
+	background-color: #d7d7d7;
+}
+.height1 {
+	height: 1px;
+}
+.height10 {
+	height: 10px;
 }
 .height250 {
 	height: 250px;
@@ -148,65 +124,22 @@ h5 {
 .height300 {
 	height: 300px;
 }
-.height325 {
-	height: 325px;
+.width-full {
+	width: 100%;
 }
-.height400 {
-	height: 400px;
+.logo-size {
+	height: 40px;
 }
-.height500 {
-	height: 500px;
-}
-.font-color-white {
-	color: white;
-}
-.font-color-light-grey {
-	color: #969696;
-}
-.font-color-brand-orange {
-	color: #e2574c;
-}
-.hr-color {
-	color: lightgrey;
-}
-.footer-dark-grey-bg {
-	background-color: #242424;
-}
-.font-add-shadow {
-    text-shadow: 1px 2px rgba(0,0,0,0.2);
-}
-.banner-image{
-	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
-				url('assets/images/banner-girl.png') center top no-repeat, 
-				url('assets/images/flower-bkgd.jpg') center top;
-	background-size: cover, 33% auto, auto 100%;
-	min-height: auto;
-	min-width: auto;
-	background-position: 
-}
-.banner-signup-image { 
-	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),
-				url('assets/images/wave-bkgd.jpg') bottom no-repeat;
-	background-size: auto 300%;
-}
-.hide-sm {
-	display: none;
-}
-.margin-hor5 {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-.margin-hor10 {
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.margin-hor15 {
-	margin-left: 15px;
-	margin-right: 15px;
+.margin-0 {
+	margin: 0px;
 }
 .margin-ver5 {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+.margin-ver8 {
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 .margin-ver10 {
 	margin-top: 10px;
@@ -216,154 +149,204 @@ h5 {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-.margin-ver25 {
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
-.margin-2 {
-	margin: 2px;
-}
-.margin-top20 {
+.margin-ver20 {
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
-.margin-top40 {
-	margin-top: 40px;
+.margin-ver30 {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
-.margin-top50 {
-	margin-top: 50px;
+.margin-hor5 {
+	margin-left: 5px;
+	margin-right: 5px;
 }
-.margin-bottom40 {
-	margin-bottom: 40px;
+.margin-hor10 {
+	margin-left: 10px;
+	margin-right: 10px;
 }
-.margin-bottom50 {
-	margin-bottom: 50px;
+.margin-hor20 {
+	margin-left: 20px;
+	margin-right: 20px;
 }
-.padding-top20 {
+.padding-ver35{
 	padding-top: 35px;
+	padding-bottom: 35px;
 }
-.line-height20 {
-	line-height: 20px;
+.padding-ver50{
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
-.align-top5 {
-	top: 5%;
+.flex {
+	display: flex;
 }
-.align-top35 {
-	top: 35%;
+.flex-row {
+	flex-flow: row wrap;
 }
-
-@media (min-width: 600px) {
-p {
-	font-size: 16px;
-	margin: 10px 0px;
+.flex-col {
+	flex-flow: column wrap;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: playfairdisplay;
-	margin: 15px 0px;
+.flex-align-center {
+	justify-content: center;
+	align-items: center;
 }
-h1 {
-	font-size: 52px;
-}
-h2 {
-	font-size: 40px;
-}
-h3 {
-	font-size: 30px;
-}
-h5 {
-	letter-spacing: 1px;
-}
-.text-box-width-max530 {
-	width: 100%;
-	max-width: 530px;
-}
-.unhide-md {
-	display: initial;
-}
-.flex-md-row {
-	flex-flow: row;
-}
-.flex-md-col {
-	flex-flow: column;
-}
-.flex-md-align-space-between {
+.flex-space-between {
 	justify-content: space-between;
 }
-.flex-md-align-space-around {
+.flex-space-around {
 	justify-content: space-around;
 }
-.flex-md-align-footer-end {
-	align-self: flex-end;
+.image-hero-banner-height {
+	height: 325px;
 }
-.flex-md-align-footer-center {
-	align-self: center;
+.hide {
+	display: none;
 }
-.flex-md-align-footer-star {
-	align-self: flex-start;
+.image-hero-banner {
+	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
+				url('assets/images/banner-girl.png') center top no-repeat, 
+				url('assets/images/flower-bkgd.jpg') center top;
+	background-size: cover, auto 105%, auto 100%;
 }
-.text-md-align-left {
+.image-signup-banner { 
+	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),
+				url('assets/images/wave-bkgd.jpg') center bottom;
+	background-size: auto 255%;
+}
+#subscribe-box {
+	background-color: white;
+    border-radius: 50px;
+    padding: 2px 4px; 
+    width: 85%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 40px; 
+}
+#subscribe-button {
+	background-color: #e2574c;
+    border-radius: 40px;
+    width: 110px;
+    height: 35px; 
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1239px){
+p {
+	font-size: 16px;
+	line-height: 32px;
+}
+h1 {
+	font-size: 40px;
+	margin: 5px;
+}
+h2 {
+	font-size: 28px;
+	margin: 8px;
+}
+h3 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 16px
+	letter-spacing: 1px;
+	margin: 5px;
+}
+.md-flex-row {
+	flex-flow: row wrap;
+}
+.md-flex-col {
+	flex-flow: column wrap;
+}
+.md-flex-align-left {
+	justify-content: center;
+	align-items: flex-start;
+}
+.md-flex-align-right {
+	justify-content: center;
+	align-items: flex-end;
+}
+.md-flex-space-between {
+	justify-content: space-between;
+}
+.md-flex-width-container {
+	flex-basis: 50%;
+}
+.md-text-box-width-max560 {
+	max-width: 560px;
+}
+.md-text-box-width-max600 {
+	max-width: 600px;
+}
+.md-text-align-left {
 	text-align: left;
 }
-.margin-md-ver10 {
-	margin :10px 0px;
+.md-text-align-right {
+	text-align: right;
 }
-.margin-md-top10 {
-	margin-top: 10px;
-}
-.padding-md-right {
-	padding-right: 40px;
+.md-unhide {
+	display: inline;
 }
 }
-
-
-/*For the Project 1, you will first create a homepage for your client "The Aloha Apparel Co.". The first part of this project will focus on building out the HTML and CSS components of this responsive website.
-You can download the files at http://bit.ly/ra-project01a Design Specifications
-
-Typography:
-The base font size is 16px for all screen width 600px and up (the mobile base font size is 14px )
-The body font family is Raleway Light
-The headings font family is Playfair Display
-
-Colours:
-The HEX code for the body font colour is #2d2d2d
-The HEX code for the light grey text colour is #969696 
-The HEX code for orange brand colour is #e2574c (used for links, some headings, and buttons)
-The HEX code for the link hover state colour is #b64036 
-The HEX code for the light grey border colour is #d7d7d7
-         
-Web Developer
-Learning Materials
- Project 1 / Part 1 - Aloha Homepage
-Next week, we’ll work on adding interactivity to the site with JS :)
-        
- The HEX code for the dark grey background colour is the footer is #242424
-Screen Sizes:
-The width of the desktop-friendly content area is 1240px If undertaking the responsive stretch goal, the width of the tablet-friendly content area is 600px
-Requirements
-To receive a “Pass” grade for this project, your submission will need to satisfy the following criteria:
-General requirements:
-Your project must:
-Contain a single .html file and an external .css file (a CSS reset may be included separately)
-Adequately reflect the designer’s vision for the website Demonstrate effective organization of the project’s root directory
-Have a Git repository initialized in its root directory
-with an appropriately customized .gitignore file
-Be pushed to GitHub (with all of your commits synced to it)
-Contain a README.md file describing the project (e.g. technologies used, personal learnings, etc.)
-HTML requirements:
-Your project must:
-Use the HTML5 doctype and semantic HTML5 mark-up Include all essential elements covered in class (e.g.
-<meta charset="utf-8"> )
-Make appropriate use of paragraph, heading, and list elements
-CSS requirements:
-Your project must:
-                   
-Make appropriate use of classes and IDs as selectors Use a CSS reset
-Use the background property where appropriate Use the float property effectively
-Demonstrate effective use of box model properties Demonstrate effective use of CSS properties for altering the visual display of text (e.g. font-family , font- style , text-transform , etc.)
-Incorporate custom fonts using @font-face
-Use an icon font
-Use CSS3 properties where appropriate (e.g. box- shadow or border-radius )
-Stretch goals:
-Want to challenge yourself? Your project could also:
-Be responsively designed using a mobile-first approach Be optimized for 3 screen sizes: mobile and min-width: 600px and min-width: 1240px
-Submission Instructions
-When you’re ready to submit your project, please email a link to your GitHub repository containing your project to cody.collicott@redacademy.com and cc: edward.apostol @redacademy.com.
+@media screen and (min-width: 1240px){
+p {
+	font-size: 16px;
+	line-height: 32px;
+}
+h1 {
+	font-size: 50px;
+	margin: 0px;
+}
+h2 {
+	font-size: 30px;
+	margin: 8px;
+}
+h3 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 16px
+	letter-spacing: 1px;
+	margin: 5px;
+}
+.md-flex-row {
+	flex-flow: row wrap;
+}
+.md-flex-col {
+	flex-flow: column wrap;
+}
+.md-flex-align-left {
+	justify-content: center;
+	align-items: flex-start;
+}
+.md-flex-align-right {
+	justify-content: center;
+	align-items: flex-end;
+}
+.md-flex-space-between {
+	justify-content: space-between;
+}
+.md-flex-width-container {
+	flex-basis: 25%;
+}
+.md-text-box-width-max560 {
+	max-width: 560px;
+}
+.md-text-box-width-max600 {
+	max-width: 600px;
+}
+.md-text-align-left {
+	text-align: left;
+}
+.md-text-align-right {
+	text-align: right;
+}
+.md-unhide {
+	display: inline;
+}
+.image-hero-banner {
+	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
+				url('assets/images/banner-girl.png') center top no-repeat, 
+				url('assets/images/flower-bkgd.jpg') center top;
+	background-size: cover, auto 123%, auto 100%;
+}
+}
