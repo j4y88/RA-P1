@@ -63,12 +63,12 @@ h5 {
 	letter-spacing: 1px;
 	margin: 5px;
 }
-a:hover, h3:hover, i:hover{
-	text-decoration: none;
-	color: #b64036;
-}
-a:link, h3:link, i:link{
-	text-decoration: none;
+input {
+	font-size: 14px;
+	background-color: transparent;
+    border: 0px transparent;
+    height: 30px;
+    width: 153px;
 }
 .font-light {
 	font-weight: 100;
@@ -206,12 +206,12 @@ a:link, h3:link, i:link{
 	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
 				url('assets/images/banner-girl.png') center top no-repeat, 
 				url('assets/images/flower-bkgd.jpg') center top;
-	background-size: cover, auto 105%, auto 100%;
+	background-size: cover, auto 110%, auto 100%;
 }
 .image-signup-banner { 
 	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),
 				url('assets/images/wave-bkgd.jpg') center bottom;
-	background-size: auto 255%;
+	background-size: auto 270%;
 }
 #subscribe-box {
 	background-color: white;
@@ -226,9 +226,16 @@ a:link, h3:link, i:link{
 	background-color: #e2574c;
     border-radius: 40px;
     width: 110px;
-    height: 35px; 
+    height: 35px;
+    border: none;
 }
-
+a:link, h3:link, i:link, p:link {
+	text-decoration: none;
+}
+a:hover, h3:hover, i:hover, p.social:hover{
+	text-decoration: none;
+	color: #b64036;
+}
 
 @media screen and (min-width: 600px) and (max-width: 1239px){
 p {
@@ -250,6 +257,13 @@ h5 {
 	font-size: 16px
 	letter-spacing: 1px;
 	margin: 5px;
+}
+input {
+	font-size: 16px;
+	background-color: transparent;
+    border: 0px transparent;
+    height: 30px;
+    width: 200px;
 }
 .md-flex-row {
 	flex-flow: row wrap;
@@ -286,6 +300,9 @@ h5 {
 .md-unhide {
 	display: inline;
 }
+.image-hero-banner-height {
+	height: 375px;
+}
 }
 @media screen and (min-width: 1240px){
 p {
@@ -297,7 +314,7 @@ h1 {
 	margin: 0px;
 }
 h2 {
-	font-size: 30px;
+	font-size: 34px;
 	margin: 8px;
 }
 h3 {
@@ -307,6 +324,13 @@ h5 {
 	font-size: 16px
 	letter-spacing: 1px;
 	margin: 5px;
+}
+input {
+	font-size: 16px;
+	background-color: transparent;
+    border: 0px transparent;
+    height: 30px;
+    width: 200px;
 }
 .md-flex-row {
 	flex-flow: row wrap;
@@ -343,10 +367,13 @@ h5 {
 .md-unhide {
 	display: inline;
 }
+.image-hero-banner-height {
+	height: 425px;
+}
 .image-hero-banner {
 	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
 				url('assets/images/banner-girl.png') center top no-repeat, 
 				url('assets/images/flower-bkgd.jpg') center top;
-	background-size: cover, auto 123%, auto 100%;
+	background-size: cover, auto 125%, auto 100%;
 }
 }
