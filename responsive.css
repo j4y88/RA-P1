@@ -1,0 +1,227 @@
+p,body {
+	font-family: Raleway;
+	font-size: 14px;
+	color: #2d2d2d;
+	line-height: 28px;
+	-webkit-font-smoothing: antialiased;
+}
+h1 , h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+}
+h1{
+	font-size:2.5em;
+	margin: .5em;
+}
+h2{
+	font-size:2em;
+	margin: 1em;
+}
+h3{
+	font-size:1.5em;
+	margin: .5em;
+}
+h4{
+	font-size:1.25em;
+	margin: .3em;
+}
+h5{
+	font-size:1em;
+	margin: .3em;
+}
+input {
+	font-size: 14px;
+	background-color: transparent;
+    border: 0px transparent;
+    height: 30px;
+    width: 153px;
+}
+.font-italic{
+	font-style: italic;
+}
+.font-bold{
+	font-style: normal;
+	font-weight: 700;
+}
+.font-text-center {
+	text-align: center;
+}
+.font-color-white {
+	color: white;
+}
+.font-color-brand-orange {
+	color: #e2574c;
+}
+.font-color-light-grey {
+	color: #969696;
+}
+.font-shadow {
+    text-shadow: 2px 3px rgba(0,0,0,0.1);
+}
+.bg-dark-grey {
+	background-color: #242424;
+}
+.bg-light-grey {
+	background-color: #d7d7d7;
+}
+.height1 {
+	height: 1px;
+}
+.height10 {
+	height: 10px;
+}
+.height-hero-banner {
+	height: 40vh;
+}
+.height-signup-banner {
+	height: 35vh;
+}
+.height-logo-size {
+	height: 5vh;
+}
+.full-width {
+	width :100%;
+}
+.margin-0 {
+	margin:0px;
+}
+.margin-hor10{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.margin-bot35 {
+	margin-bottom: 35px;
+}
+.margin-ver5{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.margin-ver15 {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.padding-ver35{
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.padding-ver50{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.flex {
+	display: flex;
+}
+.flex-row {
+	flex-flow: row wrap;
+}
+.flex-col {
+	flex-flow: column wrap;
+}
+.flex-align-center {
+	justify-content: center;
+	align-items: center;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-space-around {
+	justify-content: space-around;
+}
+.image-hero-banner {
+	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
+				url('assets/images/banner-girl.png') center top no-repeat, 
+				url('assets/images/flower-bkgd.jpg') center;
+	background-size: cover, 35% auto, auto 100%;
+}
+.image-signup-banner { 
+	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),
+				url('assets/images/wave-bkgd.jpg') center bottom;
+	background-size: auto 270%;
+}
+.draw-subscribe-box {
+	background-color: white;
+    border-radius: 50px;
+    padding: 2px 4px; 
+    width: 85%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 40px; 
+}
+.draw-subscribe-button {
+	background-color: #e2574c;
+    border-radius: 40px;
+    width: 110px;
+    height: 35px;
+    border: none;
+}
+.hide {
+	display: none;
+}
+a:link, h3:link, i:link, p:link {
+	text-decoration: none;
+}
+a:hover, h3:hover, i:hover, p.link:hover{
+	text-decoration: none;
+	color: #b64036;
+}
+
+@media (min-width: 600px) {
+h1{
+	font-size:3em;
+}
+p {font-size: 16px;
+}
+body {
+	font-size: 16px;
+}
+.md-flex-row {
+	flex-flow: row wrap;
+}
+.md-flex-col {
+	flex-flow: column wrap;
+}
+.md-flex-align-left {
+	justify-content: center;
+	align-items: flex-start;
+}
+.md-flex-align-right {
+	justify-content: center;
+	align-items: flex-end;
+}
+.md-flex-space-between {
+	justify-content: space-between;
+}
+.md-flex-width-container {
+	flex-basis: 50%;
+}
+.md-text-box-width-hero {
+	max-width: 40vw;
+}
+.md-text-box-width-signup {
+	max-width: 40vw;
+}
+.md-text-align-left {
+	text-align: left;
+}
+.md-text-align-right {
+	text-align: right;
+}
+.md-unhide {
+	display: inline;
+}
+}
+
+@media screen and (min-width: 1240px){
+h1{
+	font-size:3.25em;
+}
+.md-flex-width-container {
+	flex-basis: 25%;
+}
+}
+
+
+
+
+
+

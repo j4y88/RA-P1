@@ -220,7 +220,8 @@ input {
     width: 85%;
     min-width: 300px;
     max-width: 400px;
-    height: 40px; 
+    height: 40px;
+    border: none;
 }
 #subscribe-button {
 	background-color: #e2574c;
@@ -236,7 +237,18 @@ a:hover, h3:hover, i:hover, p.social:hover{
 	text-decoration: none;
 	color: #b64036;
 }
-
+#subscribe-button:hover {
+	background-color: #ffffff;
+    border-radius: 40px;
+    width: 110px;
+    height: 35px;
+    border: 1px solid #e2574c;
+    transform: ease-in;
+}
+#sub:hover {
+	color: #e2574c;
+	transform: ease-in;
+}
 @media screen and (min-width: 600px) and (max-width: 1239px){
 p {
 	font-size: 16px;
@@ -302,6 +314,9 @@ input {
 }
 .image-hero-banner-height {
 	height: 375px;
+}
+.logo-size {
+	height:45px;
 }
 }
 @media screen and (min-width: 1240px){
@@ -375,5 +390,14 @@ input {
 				url('assets/images/banner-girl.png') center top no-repeat, 
 				url('assets/images/flower-bkgd.jpg') center top;
 	background-size: cover, auto 125%, auto 100%;
+}
+.logo-size {
+	height:50px;
+}
+}
+@media screen and (min-width: 600px){
+	.med-and-up-text-box-width-max560 {
+
+	}
 }
 }
