@@ -34,7 +34,7 @@ input {
 	background-color: transparent;
     border: 0px transparent;
     height: 30px;
-    width: 153px;
+    flex
 }
 .font-italic{
 	font-style: italic;
@@ -71,19 +71,22 @@ input {
 	height: 10px;
 }
 .height-hero-banner {
-	height: 40vh;
+	height: 35vmax;
 }
 .height-signup-banner {
-	height: 35vh;
+	height: 33vh;
 }
 .height-logo-size {
-	height: 5vh;
+	height: 3.5vh;
 }
-.full-width {
-	width :100%;
+.height-product {
+	height: 24vmax;
 }
 .margin-0 {
 	margin:0px;
+}
+.margin-5 {
+	margin:5px;
 }
 .margin-hor10{
 	margin-left: 10px;
@@ -127,11 +130,14 @@ input {
 .flex-space-around {
 	justify-content: space-around;
 }
+.flex-width-full {
+	flex-grow :1;
+}
 .image-hero-banner {
 	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
 				url('assets/images/banner-girl.png') center top no-repeat, 
 				url('assets/images/flower-bkgd.jpg') center;
-	background-size: cover, 35% auto, auto 100%;
+	background-size: cover, 14vmax auto, auto 100%;
 }
 .image-signup-banner { 
 	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),
@@ -165,6 +171,7 @@ a:hover, h3:hover, i:hover, p.link:hover{
 	color: #b64036;
 }
 
+
 @media (min-width: 600px) {
 h1{
 	font-size:3em;
@@ -173,6 +180,9 @@ p {font-size: 16px;
 }
 body {
 	font-size: 16px;
+}
+.height-logo-size {
+	height: 3.75vmax;
 }
 .md-flex-row {
 	flex-flow: row wrap;
@@ -219,9 +229,5 @@ h1{
 	flex-basis: 25%;
 }
 }
-
-
-
-
 
 
