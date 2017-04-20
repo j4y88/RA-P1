@@ -1,6 +1,14 @@
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true,
+});
+
+
 var scrollY = 0;
 var distance = 200;
-var speed = 10;
+var speed = 35;
 
 function autoScrollTo(el) {
 	var currentY = window.pageYOffset;
