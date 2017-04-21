@@ -1,50 +1,64 @@
+*{box-sizing: border-box; margin:0px; padding:0px; border: 0.1px solid black;}
+
 .flex {
-  display: flex;
-}
-.flex-row {
-  flex-flow: row wrap;
-}
-.flex-col {
-  flex-flow: column wrap;
+	display:flex;
+	flex-flow: row wrap;
+	flex-grow:1;
+	justify-content: space-between;
+
 }
 .flex-align-center {
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
 }
-.flex-space-between {
-  justify-content: space-between;
+.image-grid{
+	height: 50vw;
+	background-color: green;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
 }
-.flex-space-around {
-  justify-content: space-around;
+.grid-100 {
+  flex: 0 0 100%;
+}
+.grid-50{
+  flex: 0 0 50%
+}
+.image-mens {
+	background: url('assets/images/mens-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+}
+.image-trends { 
+	background: url('assets/images/trends-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+}
+.image-glasses { 
+	background: url('assets/images/glasses-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+}
+.image-sale { 
+	background: url('assets/images/sale-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+}
+.image-bags { 
+	background: url('assets/images/bags-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+}
+.image-womens { 
+	background: url('assets/images/womens-category.jpg') center center no-repeat;
+	background-size: 105% auto;
 }
 
-.div1 { 
-  width:150px;
-  height:150px;
-  background-color: red;
+@media (min-width: 600px){
+.md-grid-50{
+  flex: 0 0 49.5%;
 }
-.div2 { 
-  width:150px;
-  height:150px;
-  background-color: blue;
+.md-grid-25 {
+  flex: 0 0 24.25%;
+
 }
-.div3 { 
-  width:150px;
-  height:150px;
-  background-color: orange;
+.md-image-grid {
+	height: 25vw;
+	margin: 5px 0;
 }
-.div4 { 
-  width:150px;
-  height:150px;
-  background-color: yellow;
-}
-.div5 { 
-  width:150px;
-  height:150px;
-  background-color: lightblue;
-}
-.div6 { 
-  width:150px;
-  height:150px;
-  background-color: purple;
 }
