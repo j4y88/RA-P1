@@ -1,0 +1,50 @@
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-flow: row wrap;
+}
+.flex-col {
+  flex-flow: column wrap;
+}
+.flex-align-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.div1 { 
+  width:150px;
+  height:150px;
+  background-color: red;
+}
+.div2 { 
+  width:150px;
+  height:150px;
+  background-color: blue;
+}
+.div3 { 
+  width:150px;
+  height:150px;
+  background-color: orange;
+}
+.div4 { 
+  width:150px;
+  height:150px;
+  background-color: yellow;
+}
+.div5 { 
+  width:150px;
+  height:150px;
+  background-color: lightblue;
+}
+.div6 { 
+  width:150px;
+  height:150px;
+  background-color: purple;
+}

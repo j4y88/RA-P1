@@ -14,21 +14,30 @@
 
   <body class="body-text">
 	<header class="flex flex-row flex-space-between">
-	  <a href="#"><img src="assets/images/aloha-logo.svg" class="height-logo-size margin-5"></a>
-    <div id="navigation" class="flex flex-row flex-align-center flex-width-full">
-        <ul class="flex flex-row flex-space-betwee nav">
-          <li>
-            <a href="#" onclick="return false;" onmousedown="autoScrollTo('about-us');" class="margin-hor10">About</a>
-          </li>
-          <li>
-            <a href="#" onclick="return false;" onmousedown="autoScrollTo('featured');" class="margin-hor10">Featured</a>
-          </li>
-          <li>
-            <a href="#" onclick="return false;" onmousedown="autoScrollTo('signup-banner');" class="margin-hor10">Updates</a>
-          </li>
-        </ul>
-      </div>
-	  <a href="#"><img src="assets/images/cart-icon.svg" class="height-logo-size margin-5"></a>
+		<div id="logo" class="nav-logo md-nav-logo">
+			<a href="#"><img src="assets/images/aloha-logo.svg" class="width-nav-logo margin-5"></a>
+		</div>
+		<div id="cart" class="nav-cart md-nav-cart md-nav-order">
+	    	<a href="#"><img src="assets/images/cart-icon.svg" class="width-nav-cart margin-5"></a>
+	    	<span id="cart-counter" class="counter"></span>
+	    </div>
+	    <div class="nav-line md-hide"></div>
+	    <div id="navigation" class="flex flex-width-full flex-align-center">
+	        <ul class="flex flex-row flex-space-between">
+	          <li>
+	            <a href="#about-us" class="margin-hor10">ABOUT</a>
+	          </li>
+	          <li>
+	            <a href="#shop" class="margin-hor10">SHOP</a>
+	          </li>
+	          <li>
+	            <a href="#featured" class="margin-hor10">FEATURED</a>
+	          </li>
+	          <li>
+	            <a href="#signup-banner" class="margin-hor10">UPDATES</a>
+	          </li>
+	        </ul>
+	    </div>
 	</header>
 
   <section id="hero-banner" class="image-hero-banner height-hero-banner">
@@ -43,77 +52,95 @@
     <p class="font-text-center md-text-box-width-hero margin-hor10">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
   </section>
 
-  <div class="height1 bg-light-grey"></div>
-
-  <section id="featured" class="flex flex-col flex-align-center padding-ver50">
-    <h2 class="font-text-center font-italic margin-0">Most-Loved <span class="font-bold">Products</span></h2>
+  <section id="shop">
+  	<div class="flex flex-row flex-align-center width-100">
+        <a href="#" class="flex flex-align-center image-mens image-rectangle md-image-rectangle  image-cagatgory-background-size font-catagory">Men's</a>
+        <a href="#" class="flex flex-align-center image-trends image-square md-image-square image-cagatgory-background-size font-catagory">Trends</a>
+        <a href="#" class="flex flex-align-center image-glasses image-square md-image-square image-cagatgory-background-size font-catagory">Glasses</a></span>
+        <a href="#" class="flex flex-align-center image-sale image-square md-image-square image-cagatgory-background-size font-catagory">Sale</a></span>
+        <a href="#" class="flex flex-align-center image-bags image-square md-image-square image-cagatgory-background-size font-catagory">Bags</a></span>
+        <a href="#" class="flex flex-align-center image-womens image-rectangle md-image-rectangle  image-cagatgory-background-size font-catagory">Women's</a></span>
+    </div>
   </section>
 
-    <div class="main-carousel margin-bot35">
-      <div class="carousel-cell">
-        <a href="#" class="font-text-center">
+  <section id="featured" class="flex flex-align-center padding-ver50 width-100">
+    <h2 class="font-text-center font-italic margin-0">Most-Loved <span class="font-bold">Products</span></h2>
+  </section>
+  <div id="showcase" class="margin-bot-c width-100">
+	<div class="main-carousel">
+      <div class="carousel-cell flex flex-col flex-align-center fle">
+        <a href="#featured" class="font-text-center flex flex-col flex-align-center flex-space-between">
           <img src="assets/images/stretch-knit-dress.jpg" class="height-product">
           <p class="font-color-light-grey link">DRESSES</p>
           <h3 class="font-color-brand-orange font-bold">Stretch Knit Dress</h3>
           <p class="font-color-light-grey link">$169.00</p>
         </a>
+        <button id="addCart" class="draw-add-cart-button flex-align-center flex">Add to Cart</button>
       </div>
-      <div class="carousel-cell">
-        <a href="#" class="font-text-center">
+      <div class="carousel-cell flex flex-col flex-align-center">
+        <a href="#featured" class="font-text-center flex flex-col flex-align-center flex-space-between">
           <img src="assets/images/cotton-blue-shirt.jpg" class="height-product"> 
           <p class="font-color-light-grey link">SHIRTS</p>
           <h3 class="font-color-brand-orange font-bold">Cotton Blue Shirt</h3>
           <p class="font-color-light-grey link">$89</p>
         </a>
+        <button id="addCart" class="draw-add-cart-button flex-align-center">Add to Cart</button>
       </div>
-      <div class="carousel-cell">
-        <a href="#" class="font-text-center">
+      <div class="carousel-cell flex flex-col flex-align-center">
+        <a href="#featured" class="font-text-center flex flex-col flex-align-center flex-space-between">
           <img src="assets/images/checked-stretch-dress.jpg" class="height-product">
           <p class="font-color-light-grey link">DRESSES</p>
           <h3 class="font-color-brand-orange font-bold">Checked Stretch Dress</h3>
           <p class="font-color-light-grey link">$129.00</p>
         </a>
+        <button id="addCart" class="draw-add-cart-button flex-align-center">Add to Cart</button>
       </div>
-      <div class="carousel-cell">
-        <a href="#" class="font-text-center">
+      <div class="carousel-cell flex flex-col flex-align-center">
+        <a href="#featured" class="font-text-center flex flex-col flex-align-center flex-space-between">
           <img src="assets/images/blue-hipster-backpack.jpg" class="height-product">
           <p class="font-color-light-grey link">BAGS</p>
-          <h3 class="font-color-brand-orange font-bold">Blue Hipster Backpack</h3>
+          <h3 class="font-color-brand-orange font-bold margin-hor10">Blue Strap Backpack</h3>
           <p class="font-color-light-grey link">$69.00</p>
         </a>
+        <button id="addCart" class="draw-add-cart-button flex-align-center">Add to Cart</button>
       </div>
-      <div class="carousel-cell">
-        <a href="#" class="font-text-center">
+      <div class="carousel-cell flex flex-col flex-align-center">
+        <a href="#featured" class="font-text-center flex flex-col flex-align-center flex-space-between">
           <img src="assets/images/spotted-tshirt.jpg" class="height-product">
           <p class="font-color-light-grey link">SHIRTS</p>
           <h3 class="font-color-brand-orange font-bold">Spotted T-Shirt</h3>
           <p class="font-color-light-grey link">$39.00</p>
         </a>
+        <button id="addCart" class="draw-add-cart-button flex-align-center">Add to Cart</button>
       </div>
-      <div class="carousel-cell">
-        <a href="#" class="font-text-center">
+      <div class="carousel-cell flex flex-col flex-align-center">
+        <a href="#featured" class="font-text-center flex flex-col flex-align-center flex-space-between">
           <img src="assets/images/white-dress.jpg" class="height-product">
           <p class="font-color-light-grey link">DRESSES</p>
           <h3 class="font-color-brand-orange font-bold">Long White Dress</h3>
           <p class="font-color-light-grey link">$59.00</p>
         </a>
+        <button id="addCart" class="draw-add-cart-button flex-align-center">Add to Cart</button>
       </div>
-      <div class="carousel-cell">
-        <a href="#" class="font-text-center">
+      <div class="carousel-cell flex flex-col flex-align-center">
+        <a href="#featured" class="font-text-center flex flex-col flex-align-center flex-space-between">
           <img src="assets/images/stripe-dress-shirt.jpg" class="height-product">
           <p class="font-color-light-grey link">SHIRTS</p>
           <h3 class="font-color-brand-orange font-bold">Stripe Dress Shirt</h3>
           <p class="font-color-light-grey link">$69.00</p>
         </a>
+        <button id="addCart" class="draw-add-cart-button flex-align-center">Add to Cart</button>
       </div>
-      <div class="carousel-cell">
-        <a href="#" class="font-text-center">
+      <div class="carousel-cell flex flex-col flex-align-center">
+        <a href="#featured" class="font-text-center flex flex-col flex-align-center flex-space-between">
           <img src="assets/images/red-jacket.jpg" class="height-product">
           <p class="font-color-light-grey link">DRESSES</p>
           <h3 class="font-color-brand-orange font-bold">Red Blazer Jacket</h3>
           <p class="font-color-light-grey link">$99.00</p>
         </a>
+        <button id="addCart" class="draw-add-cart-button flex-align-center">Add to Cart</button>
       </div>
+    </div>
     </div>
 
     <section id="signup-banner" class="flex image-signup-banner flex-align-center height-signup-banner padding-ver35">
@@ -122,13 +149,15 @@
         <div class="md-text-box-width-signup">
           <p class="font-color-white font-text-center font-shadow margin-bot35 margin-hor10">Stay updated on our latest prodcut releases, be first to find out about upcoming sales, and get free style tipes from our blog. Unsubscribe at any time.</p>
         </div>
-        <div id="subscribe-box" class="draw-subscribe-box flex flex-row flex-space-between flex-align-center">
-          <input type="text" name="email" placeholder="Your Email" class="font-color-light-grey flex-width-full margin-hor10">
-          <button id="subscribe-button" type="submit" class="draw-subscribe-button flex flex-col flex-align-center">
-            <a href="#">
-              <p id="sub" class="font-text-center font-color-white link">Subscribe</p>
-            </a>
-          </button>
+        <div id="subscribe-box" class="draw-subscribe-box">
+          <form name="form1" action="#" class="flex flex-row flex-space-between flex-align-center margin-top2">
+          	<input id="emailAddress" type="text" name="email1" placeholder="Your Email" class="font-color-light-grey flex-width-full margin-hor10">
+          	<button id="subscribeButton" type="submit" name="submit" value="Submit" class="draw-subscribe-button flex flex-col flex-align-center " onclick="EmailCheck(document.form1.email1)"/>
+	            <a href="#">
+	              <p id="sub" class="font-text-center font-color-white link">Subscribe</p>
+	            </a>
+          	</button>
+          </form>
         </div>
       </div>
     </section>
@@ -150,30 +179,30 @@
       </section>
 
       <section id="social" class="flex flex-align-center md-flex-row margin-ver15">
-        <section id="social-media" class="flex flex-col flex-align-center md-flex-align-right">
+        <section id="social-media" class="flex flex-col flex-align-center">
         <div class="flex md-flex-col flex-align-center md-flex-align-left">
           <a href="https://facebook.com">
-            <i class="fa fa-facebook font-color-white md-text-align-right margin-hor10 margin-ver10" aria-hidden="true">
+            <i class="fa fa-facebook font-color-white margin-hor10 margin-ver10" aria-hidden="true">
             <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Facebook</p>
             </i>
           </a>
           <a href="https://twitter.com">
-            <i class="fa fa-twitter font-color-white md-text-align-right margin-hor10 margin-ver10" aria-hidden="true">
+            <i class="fa fa-twitter font-color-white margin-hor10 margin-ver10" aria-hidden="true">
             <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Twitter</p>
             </i>
           </a>
           <a href="https://www.instagram.com">
-            <i class="fa fa-instagram font-color-white md-text-align-right margin-hor10 margin-ver10" aria-hidden="true">
+            <i class="fa fa-instagram font-color-white margin-hor10 margin-ver10" aria-hidden="true">
             <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Instagram</p>
             </i>
           </a>
           <a href="https://www.pinterest.com">
-            <i class="fa fa-pinterest font-color-white md-text-align-right margin-hor10 margin-ver10" aria-hidden="true">
+            <i class="fa fa-pinterest font-color-white margin-hor10 margin-ver10" aria-hidden="true">
             <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Pinterest</p>
             </i>
           </a>
           <a href="https://plus.google.com">
-            <i class="fa fa-google-plus font-color-white md-text-align-right margin-hor10 margin-ver10" aria-hidden="true">
+            <i class="fa fa-google-plus font-color-white margin-hor10 margin-ver10" aria-hidden="true">
             <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Google+</p>
             </i>
           </a>

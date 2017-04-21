@@ -19,30 +19,24 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
 }
-
 body {
     line-height:1;
 }
-
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
     display:block;
 }
-
 nav ul {
     list-style:none;
 }
-
 blockquote, q {
     quotes:none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
     content:'';
     content:none;
 }
-
 a {
     margin:0;
     padding:0;
@@ -50,35 +44,28 @@ a {
     vertical-align:baseline;
     background:transparent;
 }
-
-
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
-
 mark {
     background-color:#ff9;
     color:#000; 
     font-style:italic;
     font-weight:bold;
 }
-
 del {
     text-decoration: line-through;
 }
-
 abbr[title], dfn[title] {
     border-bottom:1px dotted;
     cursor:help;
 }
-
 table {
     border-collapse:collapse;
     border-spacing:0;
 }
-
 hr {
     display:block;
     height:1px;
@@ -87,7 +74,6 @@ hr {
     margin:1em 0;
     padding:0;
 }
-
 input, select {
     vertical-align:middle;
 }
@@ -116,7 +102,7 @@ h2{
 	margin: 1em;
 }
 h3{
-	font-size:1.5em;
+	font-size:1.3em;
 	margin: .5em;
 }
 h4{
@@ -134,6 +120,21 @@ input {
     height: 30px;
     flex
 }
+a:link, h3:link, i:link, p:link {
+	text-decoration: none;
+}
+a:visited, h3:visited, i:visited, p.link:visited{
+	text-decoration: none;
+}
+a:hover, h3:hover, i:hover, p.link:hover{
+	text-decoration: none;
+}
+a:active  {
+  	text-decoration: underline;
+}
+ul li {
+	list-style: none;
+}
 .font-italic{
 	font-style: italic;
 }
@@ -145,7 +146,7 @@ input {
 	text-align: center;
 }
 .font-color-white {
-	color: white;
+	color: #fff;
 }
 .font-color-brand-orange {
 	color: #e2574c;
@@ -155,6 +156,11 @@ input {
 }
 .font-shadow {
     text-shadow: 2px 3px rgba(0,0,0,0.1);
+}
+.font-catagory {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: 700;
 }
 .bg-dark-grey {
 	background-color: #242424;
@@ -174,11 +180,19 @@ input {
 .height-signup-banner {
 	height: 33vh;
 }
-.height-logo-size {
-	height: 3.5vh;
-}
 .height-product {
 	height: 24vmax;
+}
+.width-nav-logo {
+	width: 9vmax;
+	padding: 2px;
+}
+.width-nav-cart {
+	width: 3.5vmax;
+	padding: 2px;
+}
+.width-100 {
+	width: 100%;
 }
 .margin-0 {
 	margin:0px;
@@ -192,6 +206,12 @@ input {
 }
 .margin-bot35 {
 	margin-bottom: 35px;
+}
+.margin-bot-c {
+	margin-bottom: 80px;
+}
+.margin-top2 {
+	margin-top: 2px;
 }
 .margin-ver5{
 	margin-top: 5px;
@@ -231,8 +251,80 @@ input {
 .flex-width-full {
 	flex-grow :1;
 }
-.flex-width-split {
-	flex-basis: 40%;
+.draw-subscribe-box {
+	background-color: white;
+    border-radius: 50px;
+    padding: 2px 4px; 
+    width: 85%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 40px; 
+}
+.draw-subscribe-button {
+	background-color: #e2574c;
+	color: #fff;
+    border-radius: 40px;
+    width: 110px;
+    height: 35px;
+    border: none;
+}
+.draw-add-cart-button {
+	background-color: #e2574c;
+	color: #fff;
+    border-radius: 50px;
+    width: 80px;
+    height: 25px;
+    border: none;
+}
+.hide {
+	display: none;
+}
+.nav-logo{
+	flex-basis: 50%
+}
+.nav-cart{
+	flex-basis: 50%;
+	text-align: right;
+}
+.nav-line {
+  	width: 100%;
+  	height: 1px;
+  	margin: 0px auto;
+  	background-color: #d7d7d7;
+}
+.image-square {
+	height: 47vw;
+	width: 47vw;
+	margin: 0.5vw;
+}
+.image-rectangle {
+	height: 47vw;
+	width: 95vw;
+	margin: 0.5vw;
+}
+.image-mens {
+	background: url('../assets/images/mens-category.jpg') center center no-repeat;
+	background-size: 100% auto;
+}
+.image-trends { 
+	background: url('../assets/images/trends-category.jpg') center center no-repeat;
+	background-size: 100% auto;
+}
+.image-glasses { 
+	background: url('../assets/images/glasses-category.jpg') center center no-repeat;
+	background-size: 100% auto;
+}
+.image-sale { 
+	background: url('../assets/images/sale-category.jpg') center center no-repeat;
+	background-size: 100% auto;
+}
+.image-bags { 
+	background: url('../assets/images/bags-category.jpg') center center no-repeat;
+	background-size: 100% auto;
+}
+.image-womens { 
+	background: url('../assets/images/womens-category.jpg') center center no-repeat;
+	background-size: 100% auto;
 }
 .image-hero-banner {
 	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
@@ -245,45 +337,24 @@ input {
 				url('../assets/images/wave-bkgd.jpg') center bottom;
 	background-size: auto 300%;
 }
-.draw-subscribe-box {
-	background-color: white;
-    border-radius: 50px;
-    padding: 2px 4px; 
-    width: 85%;
-    min-width: 300px;
-    max-width: 400px;
-    height: 40px; 
-}
-.draw-subscribe-button {
-	background-color: #e2574c;
-    border-radius: 40px;
-    width: 110px;
-    height: 35px;
-    border: none;
-}
-.hide {
-	display: none;
-}
-.nav {
-	list-style-type: none;
-	color: #b64036;
-}
-a:link, h3:link, i:link, p:link {
-	text-decoration: none;
-}
-a:visited, h3:visited, i:visited, p.link:visited{
-	text-decoration: none;
-	color: #b64036;
-}
-a:hover, h3:hover, i:hover, p.link:hover{
-	text-decoration: none;
-	color: #b64036;
-}
-a:active  {
-  text-decoration: underline;
-}
 .flickity-page-dots { 
-	bottom: -15px; }
+	bottom: -30px; 
+}
+.counter {
+	background-color: #e2574c;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    display: none;
+}
 
 @media (min-width: 600px) {
 h1{
@@ -292,8 +363,25 @@ h1{
 a, p, body {
 	font-size: 16px;
 }
-.height-logo-size {
-	height: 3.75vmax;
+.md-image-square {
+	height: 23.75vw;
+	width: 23.75vw;
+	margin: 0.25vw;
+}
+.md-image-rectangle {
+	height: 23.75vw;
+	width: 47.75vw;
+	margin: 0.25vw;
+}
+.md-nav-logo {
+	flex-basis: 20%
+}
+.md-nav-cart {
+	flex-basis: 20%;
+	text-align: right;
+}
+.md-nav-order {
+	order:1;
 }
 .md-flex-row {
 	flex-flow: row wrap;
@@ -312,9 +400,6 @@ a, p, body {
 .md-flex-space-between {
 	justify-content: space-between;
 }
-.md-flex-width-container {
-	flex-basis: 50%;
-}
 .md-text-box-width-hero {
 	max-width: 40vw;
 }
@@ -327,6 +412,9 @@ a, p, body {
 .md-text-align-right {
 	text-align: right;
 }
+.md-hide {
+	display: none;
+}
 .md-unhide {
 	display: inline;
 }
@@ -338,9 +426,6 @@ a, p, body{
 }
 h1{
 	font-size: 3.25em;
-}
-.md-flex-width-container {
-	flex-basis: 25%;
 }
 }
 
