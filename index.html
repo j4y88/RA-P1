@@ -7,6 +7,7 @@
     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="css/flickity.css" media="screen">
     <link type="text/css" rel="stylesheet" href="css/style.css">   
+    <meta charset="UTF-8">
 
     <title>The Aloha Appearel Co.</title>
 
@@ -52,30 +53,31 @@
     <p class="font-text-center md-text-box-width-hero margin-hor10">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
   </section>
 
-<section id="shop" class="flex flex-row flex-space-between">
-  <a href="#shop" class="grid-100 md-grid-50 image-grid md-image-grid image-mens flex flex-align-center">
-  <p class="font-catagory">MEN'S</p>
-  </a>
-  <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-trends flex flex-align-center">
-  <p class="font-catagory">TRENDS</p>
-  </a>
-  <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-glasses flex flex-align-center">
-  <p class="font-catagory">GLASSES</p>
-  </a>
-  <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-sale flex flex-align-center">
-  <p class="font-catagory">SALES</p>
-  </a>
-  <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-bags flex flex-align-center">
-  <p class="font-catagory">BAGS</p>
-  </a>
-  <a href="#shop" class="grid-100 md-grid-50 image-grid md-image-grid image-womens flex flex-align-center">
-  <p class="font-catagory">WOMEN'S</p>
-  </a>
-</section>
+  <section id="shop" class="flex flex-row flex-space-between">
+    <a href="#shop" class="grid-100 md-grid-50 image-grid md-image-grid image-mens flex flex-align-center">
+    <p class="font-catagory">MEN'S</p>
+    </a>
+    <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-trends flex flex-align-center">
+    <p class="font-catagory">TRENDS</p>
+    </a>
+    <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-glasses flex flex-align-center">
+    <p class="font-catagory">GLASSES</p>
+    </a>
+    <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-sale flex flex-align-center">
+    <p class="font-catagory">SALES</p>
+    </a>
+    <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-bags flex flex-align-center">
+    <p class="font-catagory">BAGS</p>
+    </a>
+    <a href="#shop" class="grid-100 md-grid-50 image-grid md-image-grid image-womens flex flex-align-center">
+    <p class="font-catagory">WOMEN'S</p>
+    </a>
+  </section>
 
   <section id="featured" class="flex flex-align-center padding-ver50 width-100">
     <h2 class="font-text-center font-italic margin-0">Most-Loved <span class="font-bold">Products</span></h2>
   </section>
+
   <div id="showcase" class="margin-bot-c width-100">
 	<div class="main-carousel">
       <div class="carousel-cell flex flex-col flex-align-center fle">
@@ -161,12 +163,8 @@
         </div>
         <div id="subscribe-box" class="draw-subscribe-box">
           <form name="form1" action="#" class="flex flex-row flex-space-between flex-align-center margin-top2">
-          	<input id="emailAddress" type="text" name="email1" placeholder="Your Email" class="font-color-light-grey flex-width-full margin-hor10">
-          	<button id="subscribeButton" type="submit" name="submit" value="Submit" class="draw-subscribe-button flex flex-col flex-align-center " onclick="EmailCheck(document.form1.email1)"/>
-	            <a href="#">
-	              <p id="sub" class="font-text-center font-color-white link">Subscribe</p>
-	            </a>
-          	</button>
+          	<input id="emailAddress" type="text" name="email1" placeholder="Your Email" class="font-color-light-grey flex-width-full margin-left10 input">
+          	<button id="subscribeButton" type="submit" name="submit" value="Submit" class="draw-subscribe-button flex flex-col flex-align-center font-submit-button" onclick="EmailCheck(document.form1.email1)" value="Subscribe">Subscribe</button>
           </form>
         </div>
       </div>
@@ -188,41 +186,40 @@
         </div>
       </section>
 
-      <section id="social" class="flex flex-align-center md-flex-row margin-ver15 margin-hor10vw">
-          <section id="social-media" class="flex flex-row md-flex-col">
-    <div class="">
-      <a href="https://facebook.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <p class="hide md-unhide font-color-white link">Facebook</p>
-      </a>
-    </div>
-    <div>
-      <a href="https://twitter.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <p class="hide md-unhide font-color-white link">Twitter</p>
-      </a>
-    </div>
-    <div>
-      <a href="https://www.instagram.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <p class="hide md-unhide font-color-white link">Instagram</p>
-      </a>
-    </div>
-    <div>
-      <a href="https://www.pinterest.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
-        <i class="fa fa-pinterest" aria-hidden="true"></i>
-        <p class="hide md-unhide font-color-white link">Pinterest</p>
-      </a>
-    </div>
-    <div>
-      <a href="https://plus.google.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white "> 
-        <i class="fa fa-google-plus" aria-hidden="true"></i>
-        <p class="hide md-unhide font-color-white link">Google+</p>
-      </a>
-    </div>
-    </div>
-  </section>
-      </section>
+      <div id="social" class="flex flex-align-center md-flex-row margin-ver15 margin-hor10vw">
+          <div id="social-media" class="flex flex-row md-flex-col">
+            <div class="">
+              <a href="https://facebook.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <p class="hide md-unhide font-color-white link">Facebook</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <p class="hide md-unhide font-color-white link">Twitter</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <p class="hide md-unhide font-color-white link">Instagram</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.pinterest.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                <p class="hide md-unhide font-color-white link">Pinterest</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://plus.google.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white "> 
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                <p class="hide md-unhide font-color-white link">Google+</p>
+              </a>
+            </div>
+          </div>
+      </div>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
