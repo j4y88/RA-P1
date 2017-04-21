@@ -140,6 +140,10 @@ a.contactemail {
 ul li {
 	list-style: none;
 }
+.carousel-cell button:hover{
+	text-decoration: none;
+	background-color: darkred;
+}
 i {
 	width:28px;
 }
