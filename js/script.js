@@ -27,11 +27,12 @@ $(function() {
 function EmailCheck(inputText){  
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
   if(inputText.value.match(mailformat)){  
+    alert("Thank you for signing up!");
     document.form1.email.focus();  
     return true;  
   } else {  
     alert("You have entered an invalid email address!");  
-    document.form1.text1.focus();  
+    document.form1.email1.focus();  
     return false;
   }
 };

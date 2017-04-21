@@ -1,4 +1,5 @@
-/*CSS Reset*/
+/*......CSS Reset.........*/
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -126,14 +127,21 @@ a:link, h3:link, i:link, p:link {
 a:visited, h3:visited, i:visited, p.link:visited{
 	text-decoration: none;
 }
-a:hover, h3:hover, i:hover, p.link:hover{
-	text-decoration: none;
-}
 a:active  {
   	text-decoration: underline;
 }
+a:hover, h3:hover, i:hover, p.link:hover{
+	text-decoration: none;
+	color: #e2574c;
+}
+a.contactemail {
+	font-family: 'Playfair Display';
+}
 ul li {
 	list-style: none;
+}
+i {
+	width:28px;
 }
 .font-italic{
 	font-style: italic;
@@ -161,6 +169,7 @@ ul li {
 	color: #fff;
 	font-size: 1.3em;
 	font-weight: 700;
+	text-shadow: 1px 1px #ff0000;
 }
 .bg-dark-grey {
 	background-color: #242424;
@@ -203,6 +212,10 @@ ul li {
 .margin-hor10{
 	margin-left: 10px;
 	margin-right: 10px;
+}
+.margin-hor10vw{
+	margin-left: 10vw;
+	margin-right: 10vw;
 }
 .margin-bot35 {
 	margin-bottom: 35px;
@@ -251,6 +264,10 @@ ul li {
 .flex-width-full {
 	flex-grow :1;
 }
+.flex-footer-align {
+	text-align: left; 
+	align-items: center;
+}
 .draw-subscribe-box {
 	background-color: white;
     border-radius: 50px;
@@ -292,67 +309,115 @@ ul li {
   	margin: 0px auto;
   	background-color: #d7d7d7;
 }
-.image-square {
-	height: 47vw;
-	width: 47vw;
-	margin: 0.5vw;
+.image-grid {
+	height: 50vw;
+	justify-content: center;
+	align-items: center;
+	margin: 4px 0;
 }
-.image-rectangle {
-	height: 47vw;
-	width: 95vw;
-	margin: 0.5vw;
+.grid-100 {
+  flex: 0 0 100%;
+}
+.grid-50{
+  flex: 0 0 49%
 }
 .image-mens {
 	background: url('../assets/images/mens-category.jpg') center center no-repeat;
-	background-size: 100% auto;
+	background-size: 115% auto;
+	transition: background 1s ease;
+}
+.image-mens:hover {
+	background: url('../assets/images/mens-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+	transition: background 1s ease;
 }
 .image-trends { 
 	background: url('../assets/images/trends-category.jpg') center center no-repeat;
-	background-size: 100% auto;
+	background-size: 115% auto;
+	transition: background 1s ease;
+}
+.image-trends:hover  { 
+	background: url('../assets/images/trends-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+	transition: background 1s ease;
 }
 .image-glasses { 
 	background: url('../assets/images/glasses-category.jpg') center center no-repeat;
-	background-size: 100% auto;
+	background-size: 115% auto;
+	transition: background 1s ease;
+}
+.image-glasses:hover  { 
+	background: url('../assets/images/glasses-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+	transition: background 1s ease;
 }
 .image-sale { 
 	background: url('../assets/images/sale-category.jpg') center center no-repeat;
-	background-size: 100% auto;
+	background-size: 115% auto;
+	transition: background 1s ease;
+}
+.image-sale:hover  { 
+	background: url('../assets/images/sale-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+	transition: background 1s ease;
 }
 .image-bags { 
 	background: url('../assets/images/bags-category.jpg') center center no-repeat;
-	background-size: 100% auto;
+	background-size: 115% auto;
+	transition: background 1s ease;
+}
+.image-bags:hover  { 
+	background: url('../assets/images/bags-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+	transition: background 1s ease;
 }
 .image-womens { 
 	background: url('../assets/images/womens-category.jpg') center center no-repeat;
-	background-size: 100% auto;
+	background-size: 115% auto;
+	transition: background 1s ease;
+}
+.image-womens:hover  { 
+	background: url('../assets/images/womens-category.jpg') center center no-repeat;
+	background-size: 105% auto;
+	transition: background 1s ease;
 }
 .image-hero-banner {
 	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
 				url('../assets/images/banner-girl.png') center top no-repeat, 
 				url('../assets/images/flower-bkgd.jpg') center;
-	background-size: cover, 14vmax auto, auto 100%;
+	background-size: cover, 14vmax auto, auto 110%;
+	transition: background 1s ease;
+
+}
+.image-hero-banner:hover {
+	background:	linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),
+				url('../assets/images/banner-girl.png') center top no-repeat, 
+				url('../assets/images/flower-bkgd.jpg') center;
+	background-size: cover, 16.5vmax auto, auto 100%;
+	transition: background 1s ease;
 }
 .image-signup-banner { 
 	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),
 				url('../assets/images/wave-bkgd.jpg') center bottom;
 	background-size: auto 300%;
+
 }
 .flickity-page-dots { 
-	bottom: -30px; 
+	bottom: -40px; 
 }
 .counter {
 	background-color: #e2574c;
     border-radius: 50%;
     color: #fff;
     text-align: center;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 500;
-    width: 20px;
-    height: 20px;
-    padding-top: 3px;
+    width: 30px;
+    height: 28px;
+    padding-top: 2px;
     position: absolute;
-    right: -10px;
-    top: 0px;
+    right: -1px;
+    top: 2px;
     display: none;
 }
 
@@ -362,16 +427,6 @@ h1{
 }
 a, p, body {
 	font-size: 16px;
-}
-.md-image-square {
-	height: 23.75vw;
-	width: 23.75vw;
-	margin: 0.25vw;
-}
-.md-image-rectangle {
-	height: 23.75vw;
-	width: 47.75vw;
-	margin: 0.25vw;
 }
 .md-nav-logo {
 	flex-basis: 20%
@@ -418,7 +473,18 @@ a, p, body {
 .md-unhide {
 	display: inline;
 }
+.md-grid-50 {
+  flex: 0 0 49.5%;
 }
+.md-grid-25 {
+  flex: 0 0 24.25%;
+}
+.md-image-grid {
+	height: 24.25vw;
+	margin: 5px 0;
+}
+}
+
 
 @media (min-width: 1240px){
 a, p, body{
@@ -426,6 +492,10 @@ a, p, body{
 }
 h1{
 	font-size: 3.25em;
+}
+.md-image-grid {
+	height: 24.25vw;
+	margin: 8px 0;
 }
 }
 

@@ -52,16 +52,26 @@
     <p class="font-text-center md-text-box-width-hero margin-hor10">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
   </section>
 
-  <section id="shop">
-  	<div class="flex flex-row flex-align-center width-100">
-        <a href="#" class="flex flex-align-center image-mens image-rectangle md-image-rectangle  image-cagatgory-background-size font-catagory">Men's</a>
-        <a href="#" class="flex flex-align-center image-trends image-square md-image-square image-cagatgory-background-size font-catagory">Trends</a>
-        <a href="#" class="flex flex-align-center image-glasses image-square md-image-square image-cagatgory-background-size font-catagory">Glasses</a></span>
-        <a href="#" class="flex flex-align-center image-sale image-square md-image-square image-cagatgory-background-size font-catagory">Sale</a></span>
-        <a href="#" class="flex flex-align-center image-bags image-square md-image-square image-cagatgory-background-size font-catagory">Bags</a></span>
-        <a href="#" class="flex flex-align-center image-womens image-rectangle md-image-rectangle  image-cagatgory-background-size font-catagory">Women's</a></span>
-    </div>
-  </section>
+<section id="shop" class="flex flex-row flex-space-between">
+  <a href="#shop" class="grid-100 md-grid-50 image-grid md-image-grid image-mens flex flex-align-center">
+  <p class="font-catagory">MEN'S</p>
+  </a>
+  <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-trends flex flex-align-center">
+  <p class="font-catagory">TRENDS</p>
+  </a>
+  <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-glasses flex flex-align-center">
+  <p class="font-catagory">GLASSES</p>
+  </a>
+  <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-sale flex flex-align-center">
+  <p class="font-catagory">SALES</p>
+  </a>
+  <a href="#shop" class="grid-50 md-grid-25 image-grid md-image-grid image-bags flex flex-align-center">
+  <p class="font-catagory">BAGS</p>
+  </a>
+  <a href="#shop" class="grid-100 md-grid-50 image-grid md-image-grid image-womens flex flex-align-center">
+  <p class="font-catagory">WOMEN'S</p>
+  </a>
+</section>
 
   <section id="featured" class="flex flex-align-center padding-ver50 width-100">
     <h2 class="font-text-center font-italic margin-0">Most-Loved <span class="font-bold">Products</span></h2>
@@ -171,43 +181,47 @@
           <h5 class="font-color-white margin-0 md-text-align-left">&copy; 2016 Aloha Apparel Co.</h5>
           <h5 class="font-color-white margin-0 md-text-align-left">Powered by HTML and CSS.</h5>
         </div>
-        <h5 class="font-color-white margin-ver15 md-text-align-left">604-604-6040. <a href="mailto:info@alohaapparel.com" class="font-color-white">info@alohaapparel.com</a></h5>
+        <h5 class="font-color-white margin-ver15 md-text-align-left">604-604-6040. <a href="mailto:info@alohaapparel.com" class="font-color-white contactemail">info@alohaapparel.com</a></h5>
         <div class="">
           <h5 class="font-color-light-grey margin-0 md-text-align-left">1490 W Broadway</h5>
           <h5 class="font-color-light-grey margin-0 md-text-align-left">Vancouver, BC, Canada</h5>
         </div>
       </section>
 
-      <section id="social" class="flex flex-align-center md-flex-row margin-ver15">
-        <section id="social-media" class="flex flex-col flex-align-center">
-        <div class="flex md-flex-col flex-align-center md-flex-align-left">
-          <a href="https://facebook.com">
-            <i class="fa fa-facebook font-color-white margin-hor10 margin-ver10" aria-hidden="true">
-            <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Facebook</p>
-            </i>
-          </a>
-          <a href="https://twitter.com">
-            <i class="fa fa-twitter font-color-white margin-hor10 margin-ver10" aria-hidden="true">
-            <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Twitter</p>
-            </i>
-          </a>
-          <a href="https://www.instagram.com">
-            <i class="fa fa-instagram font-color-white margin-hor10 margin-ver10" aria-hidden="true">
-            <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Instagram</p>
-            </i>
-          </a>
-          <a href="https://www.pinterest.com">
-            <i class="fa fa-pinterest font-color-white margin-hor10 margin-ver10" aria-hidden="true">
-            <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Pinterest</p>
-            </i>
-          </a>
-          <a href="https://plus.google.com">
-            <i class="fa fa-google-plus font-color-white margin-hor10 margin-ver10" aria-hidden="true">
-            <p class="font-color-white md-text-align-left hide md-unhide margin-hor10 link">Google+</p>
-            </i>
-          </a>
-        </div>
-        </section>
+      <section id="social" class="flex flex-align-center md-flex-row margin-ver15 margin-hor10vw">
+          <section id="social-media" class="flex flex-row md-flex-col">
+    <div class="">
+      <a href="https://facebook.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <p class="hide md-unhide font-color-white link">Facebook</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://twitter.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <p class="hide md-unhide font-color-white link">Twitter</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <p class="hide md-unhide font-color-white link">Instagram</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.pinterest.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white ">
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+        <p class="hide md-unhide font-color-white link">Pinterest</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://plus.google.com" class="flex md-flex-row flex-footer-align margin-hor5 font-color-white "> 
+        <i class="fa fa-google-plus" aria-hidden="true"></i>
+        <p class="hide md-unhide font-color-white link">Google+</p>
+      </a>
+    </div>
+    </div>
+  </section>
       </section>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
